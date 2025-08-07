@@ -1,11 +1,12 @@
  
-# crux-ports-opt-arm
+# opt-arm
 
 CRUX-ARM ports overlay for CRUX opt collection
 
-To use these ports, download the `opt-arm.httpup` file to `/etc/ports`:
+To use these ports, download the `opt-arm.rsync` file to `/etc/ports`:
 ```
-$ sudo wget -P /etc/ports https://raw.githubusercontent.com/crux-arm/crux-ports-opt-arm/3.8/opt-arm.httpup
+$ sudo wget -P /etc/ports https://git.crux.nu/crux-arm/opt-arm/raw/branch/3.8/opt-arm.rsync
+https://raw.githubusercontent.com/crux-arm/crux-ports-opt-arm/3.8/opt-arm.httpup
 $ sudo ports -u opt-arm
 ```
 
