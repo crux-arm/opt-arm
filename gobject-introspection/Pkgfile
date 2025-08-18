@@ -2,7 +2,7 @@
 # URL: https://live.gnome.org/GObjectIntrospection
 # Maintainer: Danny Rawlins, crux at romster dot me
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
-# Depends on: glib libffi
+# Depends on: desktop-file-utils shared-mime-info
 # Optional: cairo python3-mako python3-markdown
 
 name=gobject-introspection
