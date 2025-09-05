@@ -1,11 +1,12 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauHHVwwXWXyhs9EaONQfF++DkMy7Ma91/wUwdTtFDRTGZflGPR/ISggYN1xyoBjTDANtDa7HIYyJHsXENX6E1BQA=
-SHA256 (Pkgfile) = c606ac49f2f07b17f37358331512a30985b8b835e9668be8b3dc8d33b3ce5ae3
-SHA256 (.footprint) = 9cb332c78de917072817e5eaa3be925db6f8a7948035633997d9050647ee216a
-SHA256 (rustc-1.87.0-src.tar.xz) = 8623b8651893e8c6aebfa45b6a90645a4f652f7b18189a0992a90d11ac2631f4
-SHA256 (rust-std-1.86.0-armv7-unknown-linux-gnueabihf.tar.xz) = 5084c9fd40090dd19d9c77e7a892d48497ad748b9a77afc4643da2dae30bd968
-SHA256 (rustc-1.86.0-armv7-unknown-linux-gnueabihf.tar.xz) = 5c0e7837967b6f4ceeffb5bf1ba6beea0a01724689c910b75cec1c530c930401
-SHA256 (cargo-1.86.0-armv7-unknown-linux-gnueabihf.tar.xz) = fa6029751805f692c6c2f2aede8e7b5cbb3f72a93d3e82445ca0b3d567021f00
+RWQh9Dk2FlLauGYF04AX+cuK3Ly+4HUT6vZyiUg+0OPzBEyXhFxt649UarVT/fFUmDqvgu6t1pJy5wWsg36rwZqiWiRtulsEvwc=
+SHA256 (Pkgfile) = 4db74145a6c3fd12355a8d0713d42babb1e06c233ad43128b7b0a11879b42e83
+SHA256 (.footprint) = fcf268a8dd6f9ed425d0f9fab13c7f2c42eae049d5fb60e15b88650a05f32c0c
+SHA256 (rustc-1.89.0-src.tar.xz) = 0b9d55610d8270e06c44f459d1e2b7918a5e673809c592abed9b9c600e33d95a
+SHA256 (rust-std-1.88.0-armv7-unknown-linux-gnueabihf.tar.xz) = f9e13ca81872019186a67c44919c017b1bfa80c1e2784caee81ab1f65f548b5b
+SHA256 (rustc-1.88.0-armv7-unknown-linux-gnueabihf.tar.xz) = 34b344fb7faca1664d93e0a2f6327c0005cb0c7af9f054bda8ab6d1089532745
+SHA256 (cargo-1.88.0-armv7-unknown-linux-gnueabihf.tar.xz) = 6828be4780495b960a62d8d645c0ce03499747e66b72c9e3f33c119a5e726508
 SHA256 (0001-bootstrap-Change-libexec-dir.patch) = b6fc1b7c3992876025ef989359d3227e0b38f9cc9093a9eb9ac9af3645be7f5d
 SHA256 (0002-bootstrap-Change-bash-completion-dir.patch) = d90abe88deb4682de981d05083d69074df551c1a0bb7d2264dbfab6aaf897a2a
-SHA256 (0003-bootstrap-Use-lld-mode-only-for-host-linked-targets.patch) = 012663c436beb834e775b64616ee9b1fe182d18fdce43214f39613b84299e1d0
+SHA256 (0003-compiler-Change-LLVM-targets.patch) = 0165321fa47f6fad5d15dc5c1fe7fd2ff8e65ff64663245aa81f58a07cf562d3
+SHA256 (0004-compiler-Use-wasm-ld-for-wasm-targets.patch) = 052fe0760bf848aaf3abf871a8ebe8057954e9cfd5b835b98119d917dfbf22fc
