@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauC8/TZTL7O86K+bVG3W3O2/GoQThwBrut8wO6ZI681XaebkL5FUO57vQIrAwce/CAlA3v7qsJjsgMbYXS2YNHwY=
-SHA256 (Pkgfile) = 8d5cd3a808ade406977f5290095b060488579812c00af3304408f4c975a1635e
+RWQh9Dk2FlLauODoytp6jfJ08vA4TJiXVg8Xt8aLyI+MV8gjV4siNFeJWBvkCAnAt3t7yidn3VDsmtXQDrGE9fdzVnUthN7mXQg=
+SHA256 (Pkgfile) = 63337c02dca45c45dcc6de35b73905b6bdbb38edb5d0fce1dc3c2b49a8be0b76
 SHA256 (.footprint) = cbee4f65eb9e6d612ba2d71469f3ab36d6ff8285c677bd2b2659be7ef865d0a5
-SHA256 (node-v24.7.0.tar.xz) = cf74a77753b629ffebd2e38fb153a21001b2b7a3c365c0ec7332b120b98c7251
+SHA256 (node-v24.8.0.tar.xz) = 1c03b362ebf4740d4758b9a3d3087e3de989f54823650ec80b47090ef414b2e0
 SHA256 (unbundle-uv.patch) = e279aedb1e12776df8b0976af884a88e59fa0654d3de4c178451d75241329fe9
-SHA256 (nodejs-v24.7.0-deps_patch_V8_to_fix_armv7_build.patch) = 7dded60a5ea29148ca39a1903a6151a15ccaff22f09bc6ce3f521891f77d09cb
+SHA256 (nodejs-v24.8.0-deps_patch_V8_to_fix_armv7_build.patch) = 7dded60a5ea29148ca39a1903a6151a15ccaff22f09bc6ce3f521891f77d09cb
