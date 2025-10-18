@@ -5,16 +5,14 @@
 # Optional: brotli c-ares icu libnghttp3 libngtcp2 simdjson simdutf
 
 name=nodejs
-version=24.10.0
+version=25.0.0
 release=1
 source=(https://nodejs.org/dist/v$version/node-v$version.tar.xz
-  unbundle-uv.patch
-  $name-v$version-deps_patch_V8_to_fix_armv7_build.patch)
+  unbundle-uv.patch)
 
 build() {
   cd node-v$version
 
-  patch -p1 -i $SRC/$name-v$version-deps_patch_V8_to_fix_armv7_build.patch
   patch -Np1 -i $SRC/unbundle-uv.patch
   rm deps/uv/uv.gyp deps/zlib/zlib.gyp
 
