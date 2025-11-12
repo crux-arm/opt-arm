@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauIP/T1e0jAE3tj5mFZd1wzClQ9dtnXEd+rB74QwII7Emhzc5SH6lHR9dQPDvwduvzJ6gm/NAdUtCp2bFJGtQFQc=
-SHA256 (Pkgfile) = fb081481e148a9575374b84d06a04fc55a16b7be9da75a891923ec3b1239d056
+RWQh9Dk2FlLauPC9Gr0Eg8Iq0p/xb4nqG1fxGhAKSpjkQGgJK88EgvaR4mfpT1Q55fOnGkeL07jOiN9xXbak3vUdPJ3MBBNXVwg=
+SHA256 (Pkgfile) = cd1931e17d198f2ad06a07b7ee2cfbde6e273cfec15b80e871fb574fa9c474ab
 SHA256 (.footprint) = 38092bfccda371207b6ccf393bfc5157de94bdebcf1014aacb40e3869015ec0a
-SHA256 (node-v25.0.0.tar.xz) = 2822cd7b510c955f8c4d448fa483f01d2839251774220a356a6b9bc2ab2039ae
+SHA256 (node-v25.1.0.tar.xz) = ee7741190e47402dfc621547ac23d3f58e6463a86878dc1879fb9e8de1ce3226
 SHA256 (unbundle-uv.patch) = e279aedb1e12776df8b0976af884a88e59fa0654d3de4c178451d75241329fe9
