@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauKepsxM3ol8EYGmsz8JNysfk9cZFB34cjy/prObjXEXh2innsmPdXxdwqDQ2qrCFFsjJHnRRf4+4s/l4ljCEfAs=
-SHA256 (Pkgfile) = c89056397362d089a41f920b183d3c142d0195b6f296e03727a082ec23f1c618
-SHA256 (.footprint) = 1142a772ca0acac6b40b4f6f362c96b32b6298bb3ec5515dc0b8f0f1ae3a4677
-SHA256 (tdb-1.4.14.tar.gz) = 144f407d42ed7a0ec1470a40ef17ad41133fe910bce865dd9fe084d49c907526
+RWQh9Dk2FlLauL3BLHWQEgPmZqn5iOGADwXAjb5xFlMjSgt+CW3hv8wRXnZXStWlBQ/JF0uhlNV4JzlLF87jJ5f0MnFf8BDYZwQ=
+SHA256 (Pkgfile) = 9bad82ca02130ded6d588f53153da343f7b8e6afe49d04248294432a7c45cc11
+SHA256 (.footprint) = c245dfa1312b7fb79e721a178ca83258db7deb0be12cd42f82365b9c82cfa9b1
+SHA256 (tdb-1.4.15.tar.gz) = fba09d8df1f1b9072aeae8e78b2bd43c5afef20b2f6deefa633aa14a377a8dd2
 SHA256 (tdb-man-pages.tar.xz) = 4ba01bfb0ea6d3572a00b1993783053d42170299cda5fa842629a231b957ae2f
