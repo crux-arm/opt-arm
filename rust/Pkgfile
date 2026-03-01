@@ -74,6 +74,12 @@ build() {
   patch -p1 -i $SRC/0005-compiler-Use-armhf-linux-gnu-gcc-to-link-armhf-t.patch
   patch -p1 -i $SRC/0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
 
+# Increase stack to avoid  SIGSEGV
+export RUST_MIN_STACK=16777216
+
+# Just one job
+export MAKEFLAGS="-j1"
+
 cat <<- EOF > $SRC/bootstrap.toml
 profile = "dist"
 change-id = 148795
@@ -86,10 +92,11 @@ prefix = "/usr"
 
 [rust]
 channel = "stable"
-codegen-units = 1
+codegen-units = 16
 codegen-units-std = 1
-debuginfo-level = 1
-debuginfo-level-std = 2
+debuginfo-level = 0
+debuginfo-level-rustc = 0
+debuginfo-level-std = 0
 debug-assertions = false
 remap-debuginfo = false
 codegen-tests = false
@@ -97,7 +104,10 @@ backtrace-on-ice = true
 lld = false
 bootstrap-override-lld = "external"
 llvm-bitcode-linker = false
-jemalloc = true
+jemalloc = false
+debug = false
+strip = true
+incremental = false
 
 rpath = false
 frame-pointers = true
@@ -119,8 +129,8 @@ tools = ["cargo",
   "rust-src"]
 docs = false
 extended = true
-sanitizers = true
-profiler = true
+sanitizers = false
+profiler = false
 vendor = true
 locked-deps = true
 python = "/usr/bin/python3"
@@ -194,7 +204,7 @@ EOF
     { [ ! -e /usr/include/libssh2.h ] ||
         export LIBSSH2_SYS_USE_PKG_CONFIG=1; }
     export RUST_BACKTRACE=full
-    DESTDIR=$PKG /usr/bin/python3 ./x.py --config="${SRC}"/bootstrap.toml install -j$(($(nproc) / 2))
+    DESTDIR=$PKG /usr/bin/python3 ./x.py --config="${SRC}"/bootstrap.toml install -j1
 
     prt-get isinst bash-completion || rm -r $PKG/usr/share/bash-completion
     prt-get isinst zsh || rm -r $PKG/usr/share/zsh

@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauDKqN/motndHzBCKUfLzmojSNzGkpspa3OiJUxILi6Z3w5c7haL7PhUkDwTnrAGXFjOd9vHFUlq28teJ/ChVcQs=
-SHA256 (Pkgfile) = f3eaccbca34f76f53b33ad8ad8172091f2ff767dd76cc152d2c5a4133d43e7c5
+RWQh9Dk2FlLauOkhOsJWtCzSrv2sTMUUwPpFUl94OlFsCZBfPfoFNZ8tu+C12gb7vmAzqCntEhKNZsx/o1hJs8lh8UU6ut29Kgc=
+SHA256 (Pkgfile) = b1e39e26e433281430f19c90e47bfea1cf64c30c17f45a61e70dd31167acb0f0
 SHA256 (.footprint) = ab419c9e64705d7e43b14b4d67598b78f006078668955203ec40fea76aab2448
 SHA256 (rustc-1.93.1-src.tar.xz) = 848c9171212c998c069e6979a205a1a44fa3235a463696d62e24701c83596ce0
 SHA256 (rust-std-1.92.0-armv7-unknown-linux-gnueabihf.tar.xz) = e3ac810db43067d8af9e17679d47534e871f1daad8cd0762e67da935681e9e19
