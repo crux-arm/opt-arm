@@ -1,6 +1,7 @@
 # Description: a free and open video compression format
 # URL: https://www.theora.org/
 # Maintainer: Tim Biermann, tbier at posteo dot de
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Depends on: libvorbis
 
 name=libtheora
@@ -9,16 +10,16 @@ release=1
 source=(https://downloads.xiph.org/releases/theora/$name-$version.tar.gz)
 
 build() {
-  cd $name-$version
+    cd $name-$version
 
-  ./configure \
-    --prefix=/usr \
-    --disable-examples \
-    --disable-asm
+    ./configure \
+      --prefix=/usr \
+      --disable-examples \
+      --disable-asm
 
-  make
-  make DESTDIR=$PKG install
+    make
+    make DESTDIR=$PKG install
 
-  rm -r $PKG/usr/share/doc
-  rmdir $PKG/usr/share
+    rm -r $PKG/usr/share/doc
+    rmdir $PKG/usr/share
 }
