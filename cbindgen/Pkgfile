@@ -1,6 +1,7 @@
 # Description: Generate C bindings from rust code
 # URL: https://github.com/eqrion/cbindgen
 # Maintainer: John McQuah, jmcquah at disroot dot org
+# Arch Maintainer: CRUX-ARM System Team. devel at crux-arm dot nu
 # Depends on: rust
 # Optional: sccache
 
