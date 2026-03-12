@@ -1,6 +1,7 @@
 # Description: Linux-native fakeroot using user namespaces
 # URL: https://github.com/rootless-containers/rootlesskit
 # Maintainer: Juergen Daubert, jue at crux dot nu
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 
 name=rootlesskit-bin
 version=2.3.6
