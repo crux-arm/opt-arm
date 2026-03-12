@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/opt-arm.pub
+RWQh9Dk2FlLauFc6eRmzLrdXl3CO6LrR/ixRwi8YemhgnrVaZ5k9uvOtCEGqQvCQu5qoDYlXqauRp8w4zy/r3+kZ48ceT2Mm0wE=
+SHA256 (Pkgfile) = 35ea5164d4f115f1d4c59bedc6f15dc24b7c95180159e33a83e0afc11c6bbb7c
+SHA256 (.footprint) = 9a6e784dd1f8853947d2d27e4bc7226503b262485d2f3e2886995b1633c6fc6c
+SHA256 (keyutils-1.6.3.tar.gz) = a61d5706136ae4c05bd48f86186bcfdbd88dd8bd5107e3e195c924cfc1b39bb4
