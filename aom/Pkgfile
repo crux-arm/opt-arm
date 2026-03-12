@@ -9,17 +9,17 @@ release=1
 source=(https://storage.googleapis.com/aom-releases/libaom-$version.tar.gz)
 
 build() {
-  cmake -S libaom-$version -B build -G Ninja \
-    -D CMAKE_INSTALL_PREFIX=/usr \
-    -D CMAKE_INSTALL_LIBDIR=lib \
-    -D CMAKE_BUILD_TYPE=Release \
-    -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
-    -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
-    -D BUILD_SHARED_LIBS=1 \
-    -D ENABLE_TESTS=0 \
-    -D ENABLE_NEON=$(usex cpu_flags_arm_neon ON OFF) \
-    -Wno-dev
+    cmake -S libaom-$version -B build -G Ninja \
+      -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_INSTALL_LIBDIR=lib \
+      -D CMAKE_BUILD_TYPE=Release \
+      -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+      -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+      -D BUILD_SHARED_LIBS=1 \
+      -D ENABLE_TESTS=0 \
+      -D ENABLE_NEON=$(usex cpu_flags_arm_neon ON OFF) \
+      -Wno-dev
 
-  cmake --build build
-  DESTDIR=$PKG cmake --install build
+    cmake --build build
+    DESTDIR=$PKG cmake --install build
 }
