@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauD1kscTALmjr1otZV7IJxH+lQDbYOa1bSUXMAqrU77KKoi0uCX/bRqd0HhXN5pjV4zUNOAcrJcedNYAtMB5MtwI=
-SHA256 (Pkgfile) = aeee12bc05b10692e97002e208c3439b9a862a69d7cf4806ca0cf635a85e9997
+RWQh9Dk2FlLauH/Q5I0/wfKIbhDLtJFsw8E+eHlgH43tXmVUjmgVsetvVmxGPkcQ290j86ooapCD9bh9+rFgTlnCHjGO2bN9Kw4=
+SHA256 (Pkgfile) = 0889b2702f1745cceb1a8ca032c2717732bc3db1a32b077df33ec7c663ec7e34
 SHA256 (.footprint) = 8c52b8ca8a7f5aadbcaee221d9e4af0ca78fd4126df4e1ff88969ef83d2470d7
 SHA256 (compiler-rt-21.1.8.src.tar.xz) = dd54ae21aee1780fac59445b51ebff601ad016b31ac3a7de3b21126fd3ccb229
 SHA256 (llvm-21.1.8.src.tar.xz) = d9022ddadb40a15015f6b27e6549a7144704ded8828ba036ffe4b8165707de21
