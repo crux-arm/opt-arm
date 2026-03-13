@@ -6,11 +6,9 @@
 # Optional: lld
 
 name=llvm
-version=22.1.0
+version=22.1.1
 release=1
 source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/llvm-project-$version.src.tar.xz
-#    https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/cmake-project-$version.src.tar.xz
-#    https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/third-party-$version.src.tar.xz
     install-prefix.patch
     llvm-config.h)
 
