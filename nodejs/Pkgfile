@@ -6,7 +6,7 @@
 # Optional: brotli c-ares icu libnghttp3 libngtcp2 simdjson simdutf
 
 name=nodejs
-version=25.9.0
+version=26.0.0
 release=1
 source=(https://nodejs.org/dist/v$version/node-v$version.tar.xz
   unbundle-uv.patch)
@@ -28,14 +28,14 @@ build() {
   CFLAGS="$CFLAGS -g0 -Wl,--no-keep-memory -fuse-ld=gold -Wl,--no-map-whole-files -Wl,--no-keep-files-mapped" \
   CXXFLAGS="$CFLAGS" \
   ./configure ${PKGMK_NODEJS} \
-      --prefix=/usr \
-      --ninja \
-      --without-npm \
-      --shared-libuv \
-      --shared-zlib \
-      --shared-openssl \
-      --shared-nghttp2 \
-      --experimental-http-parser
+    --prefix=/usr \
+    --ninja \
+    --without-npm \
+    --shared-libuv \
+    --shared-zlib \
+    --shared-openssl \
+    --shared-nghttp2 \
+    --experimental-http-parser
 
   make
   make DESTDIR=$PKG install
@@ -44,10 +44,10 @@ build() {
 
   # clean up
   find $PKG -type f \( \
-      -name 'README.md' -o \
-      -name 'AUTHORS.md' -o \
-      -name 'INSTALL.md' -o \
-      -name 'TODO.org' -o \
-      -name 'ChangeLog' -o \
-      -name 'NEWS' \) -delete
+    -name 'README.md' -o \
+    -name 'AUTHORS.md' -o \
+    -name 'INSTALL.md' -o \
+    -name 'TODO.org' -o \
+    -name 'ChangeLog' -o \
+    -name 'NEWS' \) -delete
 }
