@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauABP6vMghsshfoLfsV5KJFO/EAEdWj08tR0MSj4ICrgfQTK45cHitp1bBi9VtxQhJoRZAoOnzTOPpDTXoApwmQg=
-SHA256 (Pkgfile) = 821ac57afa212577482cc8c9fdf014ac1f216b7d3ed6ba0456b7f89577cb45de
-SHA256 (.footprint) = 31eacc86b589ce1d467c46a70f4cc63fe5db02b25da75b16e426e2fb8be662c6
-SHA256 (libaom-3.13.3.tar.gz) = 446a4ae9741cb8f3eeb98c949d25f91b48cb2b8569cae975c4b737392e9024fc
+RWQh9Dk2FlLauNL3nR8uCcSEcdWA05Au+ZFoUMLgoQcAS/Wis9gyXSi96aGcS4M4Eh4fuI7AWB29vCxk4IqnalYkanA6BuiqFAA=
+SHA256 (Pkgfile) = b6322cf6a85308c74d6d74274fcaf87f6ef5eecb20652551441ffc0292f24247
+SHA256 (.footprint) = 145075bbd3ff8ad788f7d5f555fd8c1fccf1d26313fced38382a05c75e46ef1a
+SHA256 (libaom-3.14.0.tar.gz) = 55852c50eadc1a27229d4840ea14c84f20ede7d85d41cc5827434c63eea1436d
