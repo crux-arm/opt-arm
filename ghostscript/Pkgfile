@@ -5,7 +5,7 @@
 # Optional: cups jbig2dec libjpeg-turbo libtiff openjpeg2 paper (xorg-libxt xorg-libxext)
 
 name=ghostscript
-version=10.05.1
+version=10.07.1
 release=1
 source=(https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs${version//./}/$name-$version.tar.xz
     https://downloads.sourceforge.net/sourceforge/gs-fonts/$name-fonts-std-8.11.tar.gz)
@@ -20,13 +20,14 @@ build() {
     prt-get isinst openjpeg2 && PKGMK_GHOSTSCRIPT+=' --enable-openjpeg' && rm -r openjpeg
     prt-get isinst xorg-libxt xorg-libxext || PKGMK_GHOSTSCRIPT+=' --without-x'
 
-    CFLAGS="$CFLAGS -DPNG_ARM_NEON_OPT=0" \
+    CFLAGS="$CFLAGS -DPNG_ARM_NEON_OPT=0 -Wno-error=declaration-after-statement" \
     ./configure $PKGMK_GHOSTSCRIPT \
         --prefix=/usr \
         --with-drivers=ALL \
         --with-ijs \
         --with-fontpath=/usr/share/ghostscript/fonts:/usr/share/fonts \
-        --disable-gtk
+        --disable-gtk \
+        --enable-fatal-warnings=no
 
     make
     make DESTDIR=$PKG install-so install
