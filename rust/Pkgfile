@@ -3,25 +3,25 @@
 # Maintainer: Danny Rawlins, crux at romster dot me
 # Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
 # Depends on: compiler-rt lld
-# Optional: clang libgit2 polly sccache
+# Optional: libgit2 polly sccache
 
 name=rust
-version=1.93.1
-_date=2025-12-11
-_rustc=1.92.0
+version=1.94.0
+_date=2026-01-22
+_rustc=1.93.0
 _cargo=$_rustc
 release=1
 
 source=(https://static.rust-lang.org/dist/${name}c-$version-src.tar.xz
-	https://static.rust-lang.org/dist/$_date/rust-std-$_rustc-armv7-unknown-linux-gnueabihf.tar.xz
-	https://static.rust-lang.org/dist/$_date/rustc-$_rustc-armv7-unknown-linux-gnueabihf.tar.xz
-	https://static.rust-lang.org/dist/$_date/cargo-$_cargo-armv7-unknown-linux-gnueabihf.tar.xz
-  0001-bootstrap-Change-libexec-dir.patch
-  0002-bootstrap-Change-bash-completion-dir.patch
-  0003-bootstrap-Workaround-for-system-stage0.patch
-  0004-compiler-Change-LLVM-targets.patch
-  0005-compiler-Use-armhf-linux-gnu-gcc-to-link-armhf-t.patch
-  0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
+    https://static.rust-lang.org/dist/$_date/rust-std-$_rustc-armv7-unknown-linux-gnueabihf.tar.xz
+    https://static.rust-lang.org/dist/$_date/rustc-$_rustc-armv7-unknown-linux-gnueabihf.tar.xz
+    https://static.rust-lang.org/dist/$_date/cargo-$_cargo-armv7-unknown-linux-gnueabihf.tar.xz
+    0001-bootstrap-Change-libexec-dir.patch
+    0002-bootstrap-Change-bash-completion-dir.patch
+    0003-bootstrap-Workaround-for-system-stage0.patch
+    0004-compiler-Change-LLVM-targets.patch
+    0005-compiler-Use-armhf-linux-gnu-gcc-to-link-armhf-t.patch
+    0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
 )
 
 unpack_source() {
@@ -41,51 +41,59 @@ unpack_source() {
 }
 
 _check_version() {
-	local ERROR
-	local DATE="$(awk -F'=' '/^compiler_date=/ {print $2}' $SRC/${name}c-$version-src/src/stage0)"
-	local RUSTC="$(awk -F'=' '/^compiler_version=/ {print $2}' $SRC/${name}c-$version-src/src/stage0)"
+    local ERROR
+    local DATE="$(awk -F'=' '/^compiler_date=/ {print $2}' $SRC/${name}c-$version-src/src/stage0)"
+    local RUSTC="$(awk -F'=' '/^compiler_version=/ {print $2}' $SRC/${name}c-$version-src/src/stage0)"
 
-	printf '\033[0;32m%s\033[0m\n' "Checking versions for bootstrap compiler.."
-	printf '\033[0;32m%s\033[0m\n' "Got _date = $_date && _rustc = $_rustc"
+    printf '\033[0;32m%s\033[0m\n' "Checking versions for bootstrap compiler.."
+    printf '\033[0;32m%s\033[0m\n' "Got _date = $_date && _rustc = $_rustc"
 
-	if [ "$DATE" != "$_date" ]; then
-		printf '\e[1;31m%-6s\e[m\n' "Error: _date $_date != $DATE"
-		ERROR=1
-	fi
-	if [ "$RUSTC" != "$_rustc" ]; then
-		printf '\e[1;31m%-6s\e[m\n' "Error: _rustc $_rustc != $RUSTC"
-		ERROR=1
-	fi
+    if [ "$DATE" != "$_date" ]; then
+        printf '\e[1;31m%-6s\e[m\n' "Error: _date $_date != $DATE"
+        ERROR=1
+    fi
+    if [ "$RUSTC" != "$_rustc" ]; then
+        printf '\e[1;31m%-6s\e[m\n' "Error: _rustc $_rustc != $RUSTC"
+        ERROR=1
+    fi
 
-	[ $ERROR ] && exit 1
-	printf '\033[0;32m%s\033[0m\n' "Versions check out! Proceeding.."
-	unset DATE RUSTC ERROR
+    [ $ERROR ] && exit 1
+    printf '\033[0;32m%s\033[0m\n' "Versions check out! Proceeding.."
+    unset DATE RUSTC ERROR
 }
 
 build() {
-	_check_version
+    _check_version
 
-	cd "${name}c-$version-src"
+    cd "${name}c-$version-src"
 
-  patch -p1 -i $SRC/0001-bootstrap-Change-libexec-dir.patch
-  patch -p1 -i $SRC/0002-bootstrap-Change-bash-completion-dir.patch
-  patch -p1 -i $SRC/0003-bootstrap-Workaround-for-system-stage0.patch
-  patch -p1 -i $SRC/0004-compiler-Change-LLVM-targets.patch
-  patch -p1 -i $SRC/0005-compiler-Use-armhf-linux-gnu-gcc-to-link-armhf-t.patch
-  patch -p1 -i $SRC/0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
+    patch -p1 -i $SRC/0001-bootstrap-Change-libexec-dir.patch
+    patch -p1 -i $SRC/0002-bootstrap-Change-bash-completion-dir.patch
+    patch -p1 -i $SRC/0003-bootstrap-Workaround-for-system-stage0.patch
+    patch -p1 -i $SRC/0004-compiler-Change-LLVM-targets.patch
+    patch -p1 -i $SRC/0005-compiler-Use-armhf-linux-gnu-gcc-to-link-armhf-t.patch
+    patch -p1 -i $SRC/0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
 
-# Increase stack to avoid  SIGSEGV
-export RUST_MIN_STACK=16777216
+    # Increase stack to avoid  SIGSEGV
+    export RUST_MIN_STACK=16777216
 
-# Just one job
-export MAKEFLAGS="-j1"
+    # Just one job
+    export MAKEFLAGS="-j1"
+
+    # Fix CFLAGS and CXXFLAGS
+    export CXXFLAGS="$CXXFLAGS -I/usr/include/c++/14.3.0 -I/usr/include/c++/14.3.0/arm-unknown-linux-gnueabihf"
+    export CFLAGS="$CFLAGS -I/usr/include/c++/14.3.0 -I/usr/include/c++/14.3.0/arm-unknown-linux-gnueabihf"
+    export CXXFLAGS_armv7_unknown_linux_gnueabihf="--target=arm-unknown-linux-gnueabihf -cxx-isystem /usr/include/c++/14.3.0/arm-unknown-linux-gnueabihf -cxx-isystem /usr/include/c++/14.3.0 --gcc-toolchain=/usr"
+
 
 cat <<- EOF > $SRC/bootstrap.toml
 profile = "dist"
-change-id = 148795
+change-id = 148671
 
 [llvm]
 download-ci-llvm = false
+cxxflags = "-isystem /usr/include/c++/14.3.0/arm-unknown-linux-gnueabihf -isystem /usr/include/c++/14.3.0"
+cflags = "-isystem /usr/include/c++/14.3.0/arm-unknown-linux-gnueabihf -isystem /usr/include/c++/14.3.0"
 
 [install]
 prefix = "/usr"
@@ -225,5 +233,6 @@ EOF
     done < <(find "$PKG/usr/lib/rustlib"  -path '*/analysis/*.json' -print0)
 
     find $PKG/usr -name "*.old" -delete
+    rm $PKG/etc/target-spec-json-schema.json
     rm $PKG/usr/lib/rustlib/{install.log,manifest-*}
 }
