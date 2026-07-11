@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauOB0VNAm7l6i4UhL7Uc2lQIGMglKrDobw+tukSulE4B1Xg+EkUjtI827Ao+pB34GEFxh56qgFuN2wLgWc8O4AQ4=
-SHA256 (Pkgfile) = b1706f845e7f73795cd8fdca6ae02a0db1038938bb1f515dcf60de118a134f8b
-SHA256 (.footprint) = 5e293a3d1cb58253bdbbaf48d1836a1e63c77fa3ac6d1e70a1de4012148ef28c
-SHA256 (go1.26.4.src.tar.gz) = 4f668a32fbfc1132e6a881fb968c2f1dada631492a339211735fbb255a42602d
-SHA256 (go1.26.4.linux-armv6l.tar.gz) = 8db458e995f18a9427a745cefe7a3323962fa2548c4715148963311f300d3b1a
+RWQh9Dk2FlLauFSdExEvAO0X6uEvdDhlD5yvrTi1xnpc3XczxqCZxiZaqma9J4ZEKrzOCjAN7dY/nUOdEz4O1g35pv5zz0sr/wc=
+SHA256 (Pkgfile) = b23d39713a00c789eceb923fc80729a5d2effbae0f981d1a75f822b75b769d98
+SHA256 (.footprint) = ae652c9f1a65aeef919c27fdcb8c09ac7b3eebcad8c04d57917e06d2f106428c
+SHA256 (go1.26.5.src.tar.gz) = 495be4bc87176ac567392e5b4116abd98466d33d7b49d41e764ccc6976b2dc42
+SHA256 (go1.26.5.linux-armv6l.tar.gz) = 6dae9edab81c13bccf962dec15f1fd2ec26c14a6821b4d2c92dab4130c289d7a
