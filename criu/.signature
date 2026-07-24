@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauF6N16uKttLHzrspO8ZzukbrwLbyFS4tpbV/5Jn8qyRrdIq+mp6t0qyGodnIvhlEtSng/uT7MdLg6Rgdt4rOcg8=
-SHA256 (Pkgfile) = 6bf3c47cc2846d5ddcbdbce3cd7160bd1e8f824b1acd7eb9e2ab9883b42251ae
+RWQh9Dk2FlLauPufsx8whxPFHj2aBYs8VPhATmLjeS0AI5ODgRs/CgQcwNoTe2B/NarWUz0pf5QQf9fkTD2hQkCUFg4soD6IlgM=
+SHA256 (Pkgfile) = 6b87c924633a9325ff0194970317c4d1869419076d0dac62f3a15910f052d5f6
 SHA256 (.footprint) = 101249f81f3bda0f4de1a25e4e5d22529f300945871126c31e0d2c90e7ab82f9
-SHA256 (criu-4.2.tar.gz) = 0c6e51af878e63df7391e6dffbbe5f0ced429bc9f1e5a603020bfd2503065c39
+SHA256 (criu-4.2.1.tar.gz) = feffdf4638125ebb12d2434754f80a1d7bbba85a3e6bee98c216f88fb99a5d96
