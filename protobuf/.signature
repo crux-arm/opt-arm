@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauGV40h95Tm9evBEW+H3xZNSiQoqOivxPuuioKZ87TeCVRuV+F3pz48QnjJxVe6GfvgmmMs40o/rGYdXClcbIOw8=
-SHA256 (Pkgfile) = 9050b0886c643cb4441e7db20ecf135bf05f38faaec4763ff4c666018354cfd9
-SHA256 (.footprint) = 83f202167cec4e59234bde09e9fc7368679afca7279f5abc8d9cafcb3a196775
-SHA256 (protobuf-36.0.tar.gz) = d120933b88a2857c1b5fb6dafe387cca1b96762c2263cb53d945dcae34e88a3f
+RWQh9Dk2FlLauJVSP7gHoREF86jGYgHJUAwGp/HppmTrbYxwtEP7vf8i8oIgn2aB9CVddxVH5XY9Rw13scyVOJ7bEj28vWWYagY=
+SHA256 (Pkgfile) = 093ad7377386736e671cc5298ad41c2a8d462a678c3e02333b258693b1d50852
+SHA256 (.footprint) = ca7da8620614cdfdc857499774628cfcedb5c367aa38b95ad70588ba4b9b6a48
+SHA256 (protobuf-36.1.tar.gz) = 7a7baff8207a57f3fe5c233d432a09eba67bdfb55a3145839d0817cae8e807a4
