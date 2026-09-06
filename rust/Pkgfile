@@ -6,7 +6,7 @@
 # Optional: libgit2 polly sccache
 
 name=rust
-version=1.98.0
+version=1.98.1
 _date=2026-07-16
 _rustc=1.97.1
 _cargo=$_rustc
@@ -22,6 +22,8 @@ source=(https://static.rust-lang.org/dist/${name}c-$version-src.tar.xz
     0004-compiler-Change-LLVM-targets.patch
     0005-compiler-Use-armhf-linux-gnu-gcc-to-link-armhf-t.patch
     0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
+    llvm23.patch
+    llvm23_2.patch
 )
 
 unpack_source() {
@@ -73,6 +75,8 @@ build() {
     patch -p1 -i $SRC/0004-compiler-Change-LLVM-targets.patch
     patch -p1 -i $SRC/0005-compiler-Use-armhf-linux-gnu-gcc-to-link-armhf-t.patch
     patch -p1 -i $SRC/0006-compiler-Swap-primary-and-secondary-lib-dirs.patch
+    patch -p1 -i $SRC/llvm23.patch
+    patch -p1 -i $SRC/llvm23_2.patch
 
     # Increase stack to avoid  SIGSEGV
     export RUST_MIN_STACK=16777216

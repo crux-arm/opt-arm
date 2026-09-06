@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauKsS0UCA2KhAn+fsvdLs+5mLEgKOjh/4zo60jo5za0t4mlsMj1ZwwcVDP9euuW/sBEazVuLCwIy0XQZBmyKr5QM=
-SHA256 (Pkgfile) = f39e035ee82a53b129a9e98fad7ea8a0f016ab97ca90d260524f08c0efd16165
-SHA256 (.footprint) = 09f19c1925df5e99f4286da81c9212d161d35ec6956fa2862dbdf876f1cdae04
-SHA256 (rustc-1.98.0-src.tar.xz) = 271fa73d8174f53d713c46a8310da7bf7cfdcfb8b7cfd1c2b74b84a83ae9fb1e
+RWQh9Dk2FlLauEIJnGa8Thk069a23uNdsWh6mnEHG3s2VZcBHRY62aoyhgsQEBT/a4i5ntLDmIhuUT222E6mVllzjuUSvp4kaA8=
+SHA256 (Pkgfile) = 8af739a7fd84367c51ac2ec6408a01351725865dd46af1de88be2158dd56494b
+SHA256 (.footprint) = df683369209cce4c726bed77c0e1b6c06b6e4f7426acd2e03ce3e73d88e5d95c
+SHA256 (rustc-1.98.1-src.tar.xz) = be1816e7f6c40abb90245ad6e024bed2a7e88d7dda4561e4d5470207df616b9f
 SHA256 (rust-std-1.97.1-armv7-unknown-linux-gnueabihf.tar.xz) = 3823992fb0b7cb172b4a9eb8f03662013911ff00e1adb94e4c5fa00e4bd15686
 SHA256 (rustc-1.97.1-armv7-unknown-linux-gnueabihf.tar.xz) = f4f68121457392995a43548be58f918c085b4beecd17c93381ebbccf23c21123
 SHA256 (cargo-1.97.1-armv7-unknown-linux-gnueabihf.tar.xz) = 738cf2ebee38e72cb7e09e499b9e259e3d2e8d22ca28b20aebf608956d10884b
@@ -12,3 +12,5 @@ SHA256 (0003-bootstrap-Workaround-for-system-stage0.patch) = 210da95ea32ba3b499b
 SHA256 (0004-compiler-Change-LLVM-targets.patch) = 8222b322c82fc201a25b899929276ec3b5c9d74ccd36bf77bba4a6247761033c
 SHA256 (0005-compiler-Use-armhf-linux-gnu-gcc-to-link-armhf-t.patch) = 7f51287621ed63853d520180287672f7bfcd5a44745e7893b80ddf6e8d247df8
 SHA256 (0006-compiler-Swap-primary-and-secondary-lib-dirs.patch) = 27e67c60fb1c7f2128dcc8d6a5898a9a81dddb0401cf04cfd639b6b2b96cf0a0
+SHA256 (llvm23.patch) = 6b32037d71df721fe605319a3ff317db70a71eeb25648b8a07180befa8799e9c
+SHA256 (llvm23_2.patch) = 9fbb42505908a15b74bd4cf2a013e8190a89c88b9a1ec8b9b3d79e1b88c4e952
