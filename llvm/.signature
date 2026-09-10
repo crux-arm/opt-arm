@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauEi1ITRKv4KApf/rbFcRZMMVNPtvfs26xF6pt0Boeo9xxsCoFo8VwmwxNUUR1dHFr8nLJRou/EtAsBg0np5iRwQ=
-SHA256 (Pkgfile) = 7a50d90ba6c3a3969f27090914340755d0bf134d66ff2c169e1eb614397b7316
-SHA256 (.footprint) = acc97a4251c87e9d966be224d5cd7764a087a018f46cb0c2acd268b042a45365
-SHA256 (llvm-project-23.1.0.src.tar.xz) = ab1f0e3ec52448c33e8782eaf0422504b87c7b016b22514653ee0d8fcee479ff
+RWQh9Dk2FlLauFOTLYRqWdBPISbU4mQyYitsgF93N0itgvBeqwdZALTQtIXHmmTPeMB3IT6SumXUgWVpIDRI2ZGymz4+igevJw4=
+SHA256 (Pkgfile) = 25784ed9eb34b9828141e2af8dedf18d3f3251250544b9b5eead2436732927c1
+SHA256 (.footprint) = 48f56a1646438551f370c320675d875f72562be1d7170536ae8d1b9281135b1e
+SHA256 (llvm-project-23.1.1.src.tar.xz) = ebe9be46fe8756d58c5b198ffad0fa2a766257add81a4dc52179bfacc7888ee6
 SHA256 (install-prefix.patch) = 2649b61a459eb6d8a9aca38ab411aec27eeae57fe82e32d135db4ccb353c9dda
 SHA256 (llvm-config.h) = 2227b83b904348e5530f3475c978e11cb0f05a85024781dcb49ac86b65582707
