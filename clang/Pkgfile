@@ -4,7 +4,7 @@
 # Depends on: llvm
 
 name=clang
-version=23.1.0
+version=23.1.1
 release=1
 source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/llvm-project-$version.src.tar.xz)
 
@@ -36,7 +36,7 @@ build will exit here. Please update llvm and compiler-rt first."
         -D LLVM_MAIN_SRC_DIR="$SRC/llvm-project-$version.src/llvm" \
         -D LLVM_PARALLEL_COMPILE_JOBS="${JOBS:-1}" \
         -D LLVM_TARGET_ARCH=ARM \
-        -D LLVM_TARGETS_TO_BUILD="ARM" \
+        -D LLVM_TARGETS_TO_BUILD="ARM;NVPTX;AMDGPU;SPIRV" \
         -D LLVM_DEFAULT_TARGET_TRIPLE="$SYSTEM_TRIPLE" \
         -D LLVM_INCLUDE_TESTS=OFF \
         -D CLANG_DEFAULT_RTLIB=libgcc \
