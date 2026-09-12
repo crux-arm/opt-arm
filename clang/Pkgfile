@@ -5,7 +5,7 @@
 
 name=clang
 version=23.1.1
-release=1
+release=2
 source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/llvm-project-$version.src.tar.xz)
 
 build() {
@@ -25,7 +25,7 @@ build will exit here. Please update llvm and compiler-rt first."
     mv llvm-project-$version.src/clang-tools-extra llvm-project-$version.src/clang/tools/extra
 
     SYSTEM_TRIPLE=$(gcc -dumpmachine)
-    GCC_VER=$(gcc -dumpversion)
+    GCC_VER=$(gcc -dumpfullversion)
 
     cmake -S llvm-project-$version.src/clang -B build -G Ninja $PKGMK_CLANG \
         -D CMAKE_INSTALL_PREFIX=/usr \
@@ -43,16 +43,19 @@ build will exit here. Please update llvm and compiler-rt first."
         -D CLANG_DEFAULT_UNWINDLIB=libgcc \
         -D CLANG_DEFAULT_LINKER=lld \
         -Wno-dev
+
     cmake --build build
     DESTDIR=$PKG cmake --install build
 
     mkdir -p $PKG/etc/clang
+
     cat > $PKG/etc/clang/clang.cfg <<EOF
---gcc-toolchain=/usr
 --gcc-install-dir=/usr/lib/gcc/$SYSTEM_TRIPLE/$GCC_VER
 --target=$SYSTEM_TRIPLE
 EOF
-    
+
     mkdir -p $PKG/usr/bin
-    ln -sf /etc/clang/clang.cfg $PKG/usr/bin/$TRIPLE.cfg 
+
+    ln -sf /etc/clang/clang.cfg $PKG/usr/bin/clang.cfg
+    ln -sf /etc/clang/clang.cfg "$PKG/usr/bin/clang++.cfg"
 }

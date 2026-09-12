@@ -3,11 +3,11 @@ drwxr-xr-x	root/root	etc/clang/
 -rw-r--r--	root/root	etc/clang/clang.cfg
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
-lrwxrwxrwx	root/root	usr/bin/.cfg -> /etc/clang/clang.cfg
 -rwxr-xr-x	root/root	usr/bin/amdgpu-arch
 -rwxr-xr-x	root/root	usr/bin/analyze-build
 lrwxrwxrwx	root/root	usr/bin/clang -> clang-23
 -rwxr-xr-x	root/root	usr/bin/clang++
+lrwxrwxrwx	root/root	usr/bin/clang++.cfg -> /etc/clang/clang.cfg
 -rwxr-xr-x	root/root	usr/bin/clang-23
 -rwxr-xr-x	root/root	usr/bin/clang-apply-replacements
 -rwxr-xr-x	root/root	usr/bin/clang-change-namespace
@@ -34,6 +34,7 @@ lrwxrwxrwx	root/root	usr/bin/clang -> clang-23
 -rwxr-xr-x	root/root	usr/bin/clang-ssaf-linker
 -rwxr-xr-x	root/root	usr/bin/clang-sycl-linker
 -rwxr-xr-x	root/root	usr/bin/clang-tidy
+lrwxrwxrwx	root/root	usr/bin/clang.cfg -> /etc/clang/clang.cfg
 -rwxr-xr-x	root/root	usr/bin/clangd
 -rwxr-xr-x	root/root	usr/bin/diagtool
 -rwxr-xr-x	root/root	usr/bin/find-all-symbols
