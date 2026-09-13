@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauJee1epT8uQHjZVHqWMS/bjss6GEPKhmAEKn0YsAyU0HNFBaJysqEENTx6MJivkFsxCXL8xPSGrpeUVJ5AzwAAQ=
-SHA256 (Pkgfile) = 88bc830c12d24bc97acbfd2b83397f11b46a6b3a5340442535bcc869632dd4e7
-SHA256 (.footprint) = 58d95f86e8f1e1c1014752df607492ea77ddc3d6085cc84a3a7dae36c76c4483
-SHA256 (ghostscript-10.07.1.tar.xz) = 1cdb766de8db8f1e589c817f09c5855ea5f65dfc8540e465a69ac14c18416025
+RWQh9Dk2FlLauCDF2EpqZ0/aps/nUEOiElbq3B3AaMnRTtP0Zg6jvjf5Mi4/v+a7eBV+qAFT7kC1GwAB3iQ96ITUOL+TuES/cg4=
+SHA256 (Pkgfile) = c8d320b25cf8352317f3215219f9f9016a8e9808306c1dc388440b9c53345565
+SHA256 (.footprint) = b2292f2945cd54efe89a49b51f1ebac3eaf76aea8e59bd83b533d454363f5b86
+SHA256 (ghostscript-10.08.0.tar.xz) = c20492bc8ebb96c87fa2e52a0926e1cda8cde95d66145e018ac713fed5da38cf
 SHA256 (ghostscript-fonts-std-8.11.tar.gz) = 0eb6f356119f2e49b2563210852e17f57f9dcc5755f350a69a46a0d641a0c401
