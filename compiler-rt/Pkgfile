@@ -17,18 +17,22 @@ build() {
       fi
     fi
 
+    SYSTEM_TRIPLE=$(gcc -dumpmachine)
+
     cmake -S llvm-project-$version.src/compiler-rt -B build -G Ninja $PKGMK_COMPILER_RT \
       -D CMAKE_INSTALL_PREFIX=/usr \
       -D CMAKE_BUILD_TYPE=Release \
       -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
       -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
       -D CMAKE_ASM_FLAGS="$CFLAGS" \
+      -D CMAKE_C_COMPILER_TARGET="$SYSTEM_TRIPLE" \
+      -D CMAKE_CXX_COMPILER_TARGET="$SYSTEM_TRIPLE" \
+      -D CMAKE_ASM_COMPILER_TARGET="$SYSTEM_TRIPLE" \
+      -D COMPILER_RT_DEFAULT_TARGET_ONLY=ON \
       -D COMPILER_RT_INSTALL_PATH=/usr/lib/clang/${version:0:2} \
       -D Python3_EXECUTABLE=/usr/bin/python3 \
       -D COMPILER_RT_INCLUDE_TESTS=OFF \
-      -D CAN_TARGET_ARM=ON \
       -D LLVM_ENABLE_PER_TARGET_RUNTIME_DIR=ON \
-      -D LLVM_DEFAULT_TARGET_TRIPLE=$(gcc -dumpmachine) \
       -D CMAKE_C_COMPILER_WORKS=ON \
       -D CMAKE_CXX_COMPILER_WORKS=ON \
       -Wno-dev
