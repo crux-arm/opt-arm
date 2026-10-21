@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/opt-arm.pub
-RWQh9Dk2FlLauMIQVVQk+WM6Rj6dcZ5CmZnfYHdk5H1zMmC47onaE5nKcyjd7/Xhfzu4aKCGn6AVk77KwvBYZcJ1qePdPfBE2wI=
-SHA256 (Pkgfile) = 3a79877e1c2be0aa328a234767238f442b058efeff831a2a6ee0fe0830c802c1
-SHA256 (.footprint) = ab1e37ca265e2ab621d95acaefa2e172d7239e897d1e9e838af96b1ea651e4b7
-SHA256 (rustc-1.99.0-src.tar.xz) = cc41916a8c84f5d9ec4f55561b44e39f43b647b133f8a6f51be9ea13c83f7036
+RWQh9Dk2FlLauMUAMp5S5xUXU57rmtsI/yLPdSr+VBSVy4PW40NC++WBR1AqS0kvPeJwZ/gr1eOA6gWG5GZ2UyF4SFfepWY4HAE=
+SHA256 (Pkgfile) = 077274b3e3d13ef12725556f0bf44929388ecb7d15de91cfc51a571dc19b3770
+SHA256 (.footprint) = 2d32807102aeb5f18e0183728abdcc6ce6ca7a7253e2603d1fe627b797cae5a0
+SHA256 (rustc-1.99.1-src.tar.xz) = 6451598a99e77f07571960f6b21d577399d3a30f33e80cbd2e3a4aae6535d265
 SHA256 (rust-std-1.98.0-armv7-unknown-linux-gnueabihf.tar.xz) = 94f2b00c79a288f145855f46b946b108a96d45fc8a4d1c1666ea472d4674e90d
 SHA256 (rustc-1.98.0-armv7-unknown-linux-gnueabihf.tar.xz) = fa020f3b892fa0b41ff629cab04be7c667622fba517684ad736c794b1644de3d
 SHA256 (cargo-1.98.0-armv7-unknown-linux-gnueabihf.tar.xz) = d7134fda3c18b210195bbd63b1618d5665349f9e3edd794b44e21b1c07d63c9b
